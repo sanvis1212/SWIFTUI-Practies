@@ -10,10 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
 
-    //CREATE A FORM , WITH SECTION , WITH GROUP ,
-    
-    
-    
+    //CREATE A FORM , WITH NAVIATION , SECTION AND GROUP .
+
     // -- FORM--> FORM OF SCROLLING LISTS OF STATIC CONTROLS LIKE TEXT AND IMAGES , YOU CAN ALSO INCLUDE USER INTRACTION CONTROL LIKE BUTTON , TEXT FILED , TOGGLE AND MORE
     
     //---GROUP --> SWIFT UI LIMITAION 10 CHILD VIEW INSIDE PARENT VIEW , BY USING GROUP YOU CAN OVERCOME FROM THIS LIMITATION
@@ -21,22 +19,18 @@ struct ContentView: View {
     //---SECTION --> DIVID THE UI WITH SECTION
     
     var body: some View {
-        Form {
-            Section {
-                Text("Title").font(.largeTitle)
-            }
-            Group {
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-                Text("Hello World")
-            }
+        NavigationView{
+            Form {
+                Section {
+                    Text("Hello world")
+                }
+                Group {
+                    Text("Hello World")
+                    Text("Hello World")
+                    Text("Hello World")
+                    Text("Hello World")
+                }
+            }.navigationBarTitle(Text("SIGNUP") )
         }
     }
   
