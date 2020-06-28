@@ -27,6 +27,15 @@ struct ContentView: View {
             }
             Group {
                 Text("Hello World")
+                Text("Hello World")
+                Text("Hello World")
+                Text("Hello World")
+                Text("Hello World")
+                Text("Hello World")
+                Text("Hello World")
+                Text("Hello World")
+                Text("Hello World")
+                Text("Hello World")
             }
         }
     }
